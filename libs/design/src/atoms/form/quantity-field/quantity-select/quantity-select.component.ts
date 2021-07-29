@@ -77,6 +77,10 @@ export class DaffQuantitySelectComponent {
     this.select.focus();
   }
 
+  onFocus() {
+    this.ngControl.control.markAsTouched();
+  }
+
   /**
    * A helper function for easily making options for the `select`.
    */
