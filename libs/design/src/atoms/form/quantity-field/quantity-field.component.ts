@@ -56,12 +56,7 @@ export class DaffQuantityFieldComponent implements ControlValueAccessor, DaffFor
   @Input() selectMax = 10;
 
   get focused(): boolean {
-    if (this.input || this.select) {
-      return this.input?.focused || this.select?.focused;
-    }
-
-    // If we don't have a control, quantity field should not be focused.
-    return false;
+    return !!(this.input?.focused || this.select?.focused);
   }
 
   disabled = false;
