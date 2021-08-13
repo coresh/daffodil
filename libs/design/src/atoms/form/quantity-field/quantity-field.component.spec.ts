@@ -34,7 +34,7 @@ class WrapperComponent {
   formControl = new FormControl(1);
 }
 
-fdescribe('DaffQuantityFieldComponent', () => {
+describe('DaffQuantityFieldComponent', () => {
   let wrapper: WrapperComponent;
   let component: DaffQuantityFieldComponent;
   let fixture: ComponentFixture<WrapperComponent>;
