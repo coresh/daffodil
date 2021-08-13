@@ -45,7 +45,7 @@ export class DaffQuantityInputComponent implements OnInit, OnDestroy {
    */
   _inputControl = new FormControl();
 
-  get focused() {
+  get focused(): boolean {
     return this.input?.focused;
   }
 

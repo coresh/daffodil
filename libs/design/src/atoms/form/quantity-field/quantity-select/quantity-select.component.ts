@@ -69,7 +69,7 @@ export class DaffQuantitySelectComponent {
     this.value = e.target.value;
   }
 
-  get focused() {
+  get focused(): boolean {
     return this.select.focused;
   }
 
